@@ -1,6 +1,6 @@
 var pokemons = ['Pikachu', 'Charmander', 'Bulbasaur', 'Mewtwo', 'Squirtle'];
 var i = 0;
-while (i < pokemons.length) {
+while (true) {
     if (pokemons[i] === 'Mewtwo') {
         console.log('Pokémon lendário encontrado: Mewtwo!');
         break;
@@ -9,4 +9,7 @@ while (i < pokemons.length) {
         console.log("Capturando ".concat(pokemons[i]));
     }
     i++;
+    if (i >= pokemons.length) {
+        break;
+    }
 }

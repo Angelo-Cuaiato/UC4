@@ -6,5 +6,6 @@ const personagensNaruto = {
 };
 
 for (const personagem in personagensNaruto) {
-  console.log(`${personagem} pertence ao clã ${personagensNaruto[personagem]}`);
+  const nome = personagem as keyof typeof personagensNaruto;
+  console.log(`${nome} pertence ao clã ${personagensNaruto[nome]}`);
 }
