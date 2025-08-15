@@ -1,0 +1,10 @@
+{
+  "name": "exerciorpg",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/batalha.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/batalha.js"
+  }
+}
