@@ -4,8 +4,11 @@ class Personagem {
   private nome: string;
   // Classe do personagem (ex: guerreiro, mago, etc) (privado)
   private classe: string;
-  // Vida atual do personagem (privado)
+  // Vida atual do personagem (privado, mas com getter público)
   private vida: number;
+  public getVida() {
+    return this.vida;
+  }
   // Força do personagem (privado)
   private forca: number;
   // Vida máxima do personagem (privado)
