@@ -35,3 +35,14 @@ for (const animal of animais) {
         animal.nadar();
     }
 }
+
+// Novo trecho: apresenta todos os animais com uma mensagem personalizada
+console.log('\nApresentação dos animais:');
+for (const animal of animais) {
+    if ('nome' in animal) {
+        // @ts-ignore
+        console.log(`Este é o(a) ${animal.nome}, um dos nossos incríveis animais!`);
+    } else {
+        console.log('Temos um animal incrível!');
+    }
+}
