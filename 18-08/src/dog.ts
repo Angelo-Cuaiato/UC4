@@ -20,6 +20,10 @@ class Dog extends PaiDog {
   emitirSom(): void {
     console.log(`${this.nome} barks.`);
   }
+
+  eat(): void {
+    console.log(`${this.nome} está comendo ração de cachorro.`);
+  }
 }
 
 export { Dog, PaiDog };

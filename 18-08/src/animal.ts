@@ -9,6 +9,10 @@ class Animal {
   emitirSom(): void {
     console.log(`${this.nome} faz um som.`);
   }
+
+  eat(): void {
+    console.log(`${this.nome} está comendo.`);
+  }
 }
 
 export { Animal };

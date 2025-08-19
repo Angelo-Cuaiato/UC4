@@ -12,6 +12,10 @@ class Coruja extends Animal {
   voar(): void {
     console.log(`${this.nome} está voando silenciosamente.`);
   }
+
+  eat(): void {
+    console.log(`${this.nome} está comendo um rato.`);
+  }
 }
 
 export { Coruja };

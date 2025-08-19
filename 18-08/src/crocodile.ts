@@ -13,6 +13,10 @@ class Crocodile extends Animal {
   nadar(): void {
     console.log(`${this.nome} está nadando.`);
   }
+
+  eat(): void {
+    console.log(`${this.nome} está comendo carne.`);
+  }
 }
 
 export { Crocodile };
