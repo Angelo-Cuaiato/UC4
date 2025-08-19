@@ -46,3 +46,24 @@ for (const animal of animais) {
         console.log('Temos um animal incrível!');
     }
 }
+
+// NOVO: Escolha aleatória de um animal para ser o "Animal do Dia"
+const animalDoDia = animais[Math.floor(Math.random() * animais.length)];
+console.log('\n🐾 O Animal do Dia é:');
+// @ts-ignore
+if ('nome' in animalDoDia) {
+    // @ts-ignore
+    console.log(`${animalDoDia.nome}! Parabéns!`);
+    animalDoDia.emitirSom();
+    animalDoDia.eat();
+    if ('voar' in animalDoDia && typeof animalDoDia['voar'] === 'function') {
+        // @ts-ignore
+        animalDoDia.voar();
+    }
+    if ('nadar' in animalDoDia && typeof animalDoDia['nadar'] === 'function') {
+        // @ts-ignore
+        animalDoDia.nadar();
+    }
+} else {
+    console.log('Temos um animal incrível do dia!');
+}
