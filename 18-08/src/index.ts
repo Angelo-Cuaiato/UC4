@@ -22,3 +22,16 @@ console.log('\nAgora cada animal vai emitir seu som:');
 for (const animal of animais) {
     animal.emitirSom();
 }
+
+// Novo trecho: cada animal faz sua ação especial, se existir
+console.log('\nAções especiais dos animais:');
+for (const animal of animais) {
+    if ('voar' in animal && typeof animal['voar'] === 'function') {
+        // @ts-ignore
+        animal.voar();
+    }
+    if ('nadar' in animal && typeof animal['nadar'] === 'function') {
+        // @ts-ignore
+        animal.nadar();
+    }
+}
