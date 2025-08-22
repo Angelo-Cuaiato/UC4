@@ -45,4 +45,3 @@ for (const animal of animais) {
     } else {
         console.log('Temos um animal incrível!');
     }
-}
