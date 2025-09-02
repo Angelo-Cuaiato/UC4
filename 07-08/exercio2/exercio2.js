@@ -1,12 +1,13 @@
-var personagens = [
+const personagens = [
     { nome: 'Luke Skywalker', jedi: true },
     { nome: 'Leia Organa', jedi: false },
     { nome: 'Yoda', jedi: true },
     { nome: 'Darth Vader', jedi: false },
 ];
-for (var _i = 0, personagens_1 = personagens; _i < personagens_1.length; _i++) {
-    var personagem = personagens_1[_i];
+for (const personagem of personagens) {
     if (personagem.jedi) {
-        console.log("Jedi encontrado: ".concat(personagem.nome));
+        console.log(`Jedi encontrado: ${personagem.nome}`);
     }
 }
+export {};
+//# sourceMappingURL=exercio2.js.map

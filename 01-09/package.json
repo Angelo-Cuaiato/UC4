@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/readline-sync": "^1.4.8"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/src/aula3/index.js",
+    "start:aula2": "tsc && node dist/aula2/index.js",
+    "start:aula3": "tsc && node dist/src/aula3/index.js",
+    "start:aula3:konoha": "tsc && node dist/src/aula3/konoha/Konoha.js"
+  }
+}
